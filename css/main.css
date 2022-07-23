@@ -1,0 +1,35 @@
+:root {
+  --color-background-main: #ffffff;
+  --color-background-second: #f7f7f7;
+  --color-background-accent: #191c26;
+  --color-text-main: #303030;
+  --color-text-second: #555555;
+  --color-text-white: #ffffff;
+  --color-text-light: #9da4bd;
+  --color-accent: #ff6c00;
+  --font-family-main: "Open Sans", sans-serif;
+  --font-family-title: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link:hover, .link:focus {
+  color: var(--color-accent);
+}/*# sourceMappingURL=main.css.map */
