@@ -1,5 +1,13 @@
 // utils
 @import './utils/variables';
+@import './utils/mixins';
+@import './utils/breakpoints';
 
 // base styles
 @import './base/reset';
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+// components
+@import './components/visually-hidden';
