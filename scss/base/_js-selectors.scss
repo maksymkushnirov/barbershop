@@ -1,0 +1,8 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.js-no-transparency {
+  background-color: rgba(16, 18, 27, 0.4);
+  backdrop-filter: blur(10px);
+}

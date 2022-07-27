@@ -20,9 +20,9 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body id="body" style="overflow: unset">
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__container container">
         <a class="link" href="./index.html" aria-label="Company Logo">
           <svg class="logo" width="69" height="56">
@@ -651,5 +651,16 @@
         <p class="copyright">&#169; Copyright</p>
       </div>
     </footer>
+    <div class="fix-down">
+      <div class="container">
+        <a class="scroll-to-top" href="#hero">
+          <svg class="arrow-top" width="20" height="20">
+            <use href="./images/sprite.svg#arrow-up"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>

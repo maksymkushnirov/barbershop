@@ -8,6 +8,11 @@
 @import './base/common';
 @import './base/section';
 @import './base/container';
+@import './base/js-selectors';
 
 // components
 @import './components/visually-hidden';
+@import './components/scroll-to-top';
+
+// layuots
+@import './layouts/header';
