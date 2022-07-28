@@ -28,6 +28,10 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
+  &--mode-light {
+    color: rgba(157, 164, 189, 0.6);
+  }
 }
 
 .section-title {
@@ -38,6 +42,20 @@
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+
+  &--mode-light {
+    color: var(--color-text-white);
+  }
+
+  &--size-s {
+    font-size: 28px;
+    line-height: 1.18;
+
+    @include mq(desktop) {
+      font-size: 42px;
+      line-height: 1.17;
+    }
+  }
 }
 
 .subtitle {
@@ -46,6 +64,24 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
+
+  &--mode-light {
+    color: var(--color-text-light);
+  }
+
+  &--mode-dark {
+    color: var(--color-text-second);
+  }
+
+  &--size-s {
+    font-size: 16px;
+    line-height: 1.62;
+
+    @include mq(desktop) {
+      font-size: 18px;
+      line-height: 1.67;
+    }
+  }
 }
 
 .description {
