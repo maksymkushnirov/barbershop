@@ -1,0 +1,32 @@
+.gallery {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__group {
+    & .uppertitle {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    @include mq(mobile) {
+      max-width: 418px;
+      max-height: 360px;
+    }
+
+    @include mq(tablet) {
+      max-width: 330px;
+    }
+
+    @include mq(desktop) {
+      max-width: 270px;
+    }
+  }
+}
