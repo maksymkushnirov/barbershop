@@ -772,22 +772,44 @@
         </div>
       </section>
       <!-- section-contacts -->
-      <section class="contacts section">
+      <section class="contacts section" id="contacts">
         <div class="contacts__container container">
           <!-- form-book-a-service -->
-          <div class="contacts__form">
+          <div class="contacts__form" id="book">
             <h2 class="section-title section-title--mode-light">Book a Service</h2>
-            <form class="form">
+            <form class="form" name="form-contacts" autocomplete="on">
               <label class="form__field" aria-label="Name">
-                <input class="form__input" type="text" />
+                <input
+                  class="form__input"
+                  type="text"
+                  name="user-name"
+                  placeholder="Name"
+                  minlength="2"
+                  pattern="[a-zA-Zа-яґіїєА-ЯІЇҐЄ\s]+"
+                  title="Cyrillic / Latin uppercase / lowercase letters and spaces"
+                  required
+                />
                 <span class="form__label">Name*</span>
               </label>
               <label class="form__field" aria-label="Phone">
-                <input class="form__input" type="tel" />
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="user-phone"
+                  required
+                  placeholder="0-9"
+                  pattern="[0-9]"
+                  title="digits without +"
+                  required
+                />
                 <span class="form__label">Telephone*</span>
               </label>
               <label class="form__field form__field-comment" aria-label="Comment">
-                <textarea class="form__comment"></textarea>
+                <textarea
+                  class="form__comment"
+                  name="comment"
+                  placeholder="Type a message here"
+                ></textarea>
                 <span class="form__label">Message</span>
               </label>
             </form>
@@ -806,16 +828,25 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                      <svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#map-pin"></use>
+                      </svg>
                       Khreschatyk St, 1, Kyiv, 01001
                     </a>
                   </li>
                   <li class="address__item">
                     <a class="adress__link link" href="tel:+380000000000" aria-label="call">
+                      <svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#call"></use>
+                      </svg>
                       +38 (000) 000 00 00
                     </a>
                   </li>
                   <li class="address__item">
                     <a class="adress__link link" href="mailto:example@email.com" aria-label="email">
+                      <svg class="address__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#mail"></use>
+                      </svg>
                       example@email.com
                     </a>
                   </li>
