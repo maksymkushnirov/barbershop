@@ -203,6 +203,35 @@ body {
           clip-path: inset(50%);
 }
 
+.btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 25px;
+  min-width: 160px;
+  min-height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-accent);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus, .btn:active {
+  color: var(--color-text-white);
+  background-color: var(--color-accent);
+}
+.btn--mode-light {
+  color: var(--color-text-main);
+}
+.btn--mode-dark {
+  color: var(--color-text-white);
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
