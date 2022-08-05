@@ -1035,6 +1035,47 @@ body {
 .gallery__group .uppertitle {
   margin-bottom: 44px;
 }
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-discount);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: var(--color-text-white);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-accent);
+  -webkit-transform: rotate(-45deg) translate(-31%, -200%);
+          transform: rotate(-45deg) translate(-31%, -200%);
+}
+@media screen and (min-width: 768px) {
+  .gallery__item::before {
+    -webkit-transform: rotate(-45deg) translate(-30%, -120%);
+            transform: rotate(-45deg) translate(-30%, -120%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__item::before {
+    -webkit-transform: rotate(-45deg) translate(-30%, -80%);
+            transform: rotate(-45deg) translate(-30%, -80%);
+  }
+}
+.gallery__item:hover::before, .gallery__item:focus::before, .gallery__item:active::before {
+  background-color: rgba(255, 106, 0, 0.6);
+}
 .gallery__image {
   width: 100%;
   height: 100%;
