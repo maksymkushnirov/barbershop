@@ -17,6 +17,8 @@
 
   cursor: pointer;
 
+  transition: color var(--animation), background-color var(--animation);
+
   &:hover,
   &:focus,
   &:active {

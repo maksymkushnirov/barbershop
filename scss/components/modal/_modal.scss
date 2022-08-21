@@ -18,6 +18,8 @@
   border-radius: 10px;
 
   overflow-y: auto;
+  opacity: 1;
+  transition: transform var(--animation), visibility var(--animation), opacity var(--animation);
 
   .backdrop.is-hidden > & {
     transform: translate(-50%, -50%) scale(1.5);
@@ -69,6 +71,7 @@
   border-radius: 50%;
 
   cursor: pointer;
+  transition: color var(--animation);
 
   &:hover,
   &:focus {

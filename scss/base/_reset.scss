@@ -23,6 +23,8 @@ img {
   text-decoration: none;
   color: inherit;
 
+  transition: color var(--animation);
+
   &:hover,
   &:focus {
     color: var(--color-accent);

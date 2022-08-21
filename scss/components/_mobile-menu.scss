@@ -61,6 +61,7 @@
   border: none;
 
   cursor: pointer;
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
@@ -121,6 +122,8 @@
     line-height: 1.39;
     letter-spacing: 0.01em;
 
+    transition: color var(--animation);
+
     @include mq(mobile) {
       font-size: 18px;
     }
@@ -140,6 +143,8 @@
   @include font-size(18);
   line-height: 1.39;
   letter-spacing: 0.01em;
+
+  transition: color var(--animation);
 
   @include mq(mobile) {
     font-size: 18px;

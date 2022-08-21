@@ -32,6 +32,7 @@
       width: 18px;
 
       cursor: pointer;
+      transition: background-color var(--fast-anim);
     }
   }
 
@@ -84,6 +85,7 @@
       border: none;
       border-bottom: 1px solid rgba(157, 164, 189, 0.6);
       cursor: pointer;
+      transition: color var(--animation), border-bottom var(--animation), var(--fast-anim);
 
       &:hover,
       &:focus,
@@ -140,4 +142,11 @@
   &__img {
     width: 100%;
   }
+}
+
+// fading-animation
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }

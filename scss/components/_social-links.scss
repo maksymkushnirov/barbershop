@@ -26,6 +26,8 @@
     border-radius: 50%;
     background-color: var(--color-background-main);
 
+    transition: background-color var(--animation);
+
     &:hover,
     &:focus {
       color: var(--color-text-white);

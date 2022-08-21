@@ -42,13 +42,17 @@
     }
   }
 
-  @include mq(tablet) {
-    min-width: 330px;
-    height: 235px;
-  }
+  &__image {
+    transition: transform var(--slow-anim);
 
-  @include mq(desktop) {
-    min-width: 270px;
-    height: 445px;
+    @include mq(tablet) {
+      min-width: 330px;
+      height: 235px;
+    }
+
+    @include mq(desktop) {
+      min-width: 270px;
+      height: 445px;
+    }
   }
 }

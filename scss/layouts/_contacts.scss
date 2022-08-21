@@ -117,6 +117,8 @@
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 
+    transition: border-color var(--animation);
+
     @include mq(mobile) {
       width: 418px;
     }
@@ -134,6 +136,15 @@
     &:active {
       outline: 0;
       border-bottom: 1px solid var(--color-text-white);
+    }
+
+    &::placeholder {
+      opacity: 0;
+      transition: opacity var(--animation);
+    }
+
+    &:focus::placeholder {
+      opacity: 1;
     }
 
     &:hover ~ .form__label,
@@ -158,6 +169,7 @@
     color: rgba(157, 164, 189, 0.4);
 
     transform: translateY(20px);
+    transition: transform var(--slow-anim);
   }
 
   & .form__comment {
@@ -186,6 +198,8 @@
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     border-radius: 4px;
 
+    transition: border-color var(--animation);
+
     @include mq(mobile) {
       width: 418px;
     }
@@ -208,6 +222,12 @@
 
     &::placeholder {
       color: rgba(157, 164, 189, 0.4);
+      opacity: 0;
+      transition: opacity var(--animation);
+    }
+
+    &:focus::placeholder {
+      opacity: 1;
     }
 
     &:hover ~ .form__label,

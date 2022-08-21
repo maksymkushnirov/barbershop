@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body id="body" style="overflow: unset">
@@ -241,7 +242,7 @@
               <li class="slider__item"><a href="#slide-3" onclick="currentSlide(3)"></a></li>
             </ul>
             <div class="slides">
-              <div class="slide" id="slide-1">
+              <div class="slide fade" id="slide-1">
                 <picture class="slide__img">
                   <source
                     media="(min-width:1280px)"
@@ -284,7 +285,7 @@
                   />
                 </picture>
               </div>
-              <div class="slide" id="slide-2">
+              <div class="slide fade" id="slide-2">
                 <picture class="slide__img">
                   <source
                     media="(min-width:1280px)"
@@ -327,7 +328,7 @@
                   />
                 </picture>
               </div>
-              <div class="slide" id="slide-3">
+              <div class="slide fade" id="slide-3">
                 <picture class="slide__img">
                   <source
                     media="(min-width:1280px)"
@@ -529,19 +530,19 @@
             </p>
           </div>
           <ul class="benefits__list list">
-            <li class="benefits__item">
+            <li class="benefits__item" data-aos="zoom-in-up" data-aos-delay="200">
               <p class="benefits__amount">600<sup class="benefits__amount--decor">+</sup></p>
               <p class="benefits__text">satisfied customers per day</p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item" data-aos="zoom-in-up" data-aos-delay="300">
               <p class="benefits__amount">50<sup class="benefits__amount--decor">+</sup></p>
               <p class="benefits__text">awards for excellent service</p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item" data-aos="zoom-in-up" data-aos-delay="400">
               <p class="benefits__amount">20<sup class="benefits__amount--decor">+</sup></p>
               <p class="benefits__text">best barbers in Kyiv</p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item" data-aos="zoom-in-up" data-aos-delay="500">
               <p class="benefits__amount">100<sup class="benefits__amount--decor">+</sup></p>
               <p class="benefits__text">gifts for regular customers</p>
             </li>
@@ -556,7 +557,7 @@
             <h2 class="section-title">Our Barbers</h2>
           </div>
           <ul class="team__list list">
-            <li class="team__item">
+            <li class="team__item" data-aos="zoom-in-up" data-aos-delay="200">
               <picture>
                 <source
                   media="(min-width:1280px)"
@@ -660,7 +661,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
+            <li class="team__item" data-aos="zoom-in-up" data-aos-delay="300">
               <picture>
                 <source
                   media="(min-width:1280px)"
@@ -764,7 +765,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
+            <li class="team__item" data-aos="zoom-in-up" data-aos-delay="400">
               <picture>
                 <source
                   media="(min-width:1280px)"
@@ -1190,5 +1191,7 @@
     <script src="./js/mobile-modal.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/header-scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animations.js"></script>
   </body>
 </html>

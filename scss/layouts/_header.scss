@@ -17,6 +17,10 @@
     }
   }
 
+  & .btn {
+    animation: swing 6s ease-in-out infinite forwards;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -103,4 +107,5 @@
   text-transform: uppercase;
 
   color: var(--color-text-white);
+  transition: color var(--animation);
 }
