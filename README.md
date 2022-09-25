@@ -1,5 +1,5 @@
 # barbershop
 
-barbershop.goit.ua \
-barbershop-pl.goit.global \
-barbershop.goit.global
+https://barbershop.goit.ua \
+https://barbershop-pl.goit.global \
+https://barbershop.goit.global
